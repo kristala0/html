@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile and Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea, button {
+            padding: 8px;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Personal Profile Section -->
+    <h1>Joenilyn Tumala</h1>
+
+    <p>Hello, my name is Joenilyn Tumala. I am 21 years old and I love to sing and dance.</p>
+
+    <img src="https://assets.onecompiler.app/42xuf22nv/43cy8r3wk/joenilyn.jpg" alt="John Doe" width="200" height="200">
+
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Coding</li>
+        <li>Reading</li>
+        <li>Travelling</li>
+        <li>Photography</li>
+    </ul>
+
+    <!-- Contact Form Section -->
+    <h1>Contact Me</h1>
+    <form action="/submit_form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Product Table Section -->
+    <h1>Product List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample Product Row 1 -->
+            <tr>
+                <td>Eyeshadow</td>
+                <td>$10</td>
+                <td>100</td>
+            </tr>
+            <!-- Sample Product Row 2 -->
+            <tr>
+                <td>Lipstick</td>
+                <td>15</td>
+                <td>00</td>
+            </tr>
+            <!-- Add more products as required (up to 150 products) -->
+        </tbody>
+    </table>
+
+</body>
+</html>
